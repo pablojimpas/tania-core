@@ -284,7 +284,7 @@ func (q TaskReadQueryMysql) CountTasksWithFilter(params map[string]string) <-cha
 	return result
 }
 
-func (q TaskReadQueryMysql) populateQueryResult(rows *sql.Rows) (storage.TaskRead, error) {
+func (TaskReadQueryMysql) populateQueryResult(rows *sql.Rows) (storage.TaskRead, error) {
 	rowsData := taskReadQueryResult{}
 
 	err := rows.Scan(
