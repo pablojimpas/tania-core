@@ -282,7 +282,7 @@ func (q TaskReadQuerySqlite) CountTasksWithFilter(params map[string]string) <-ch
 	return result
 }
 
-func (q TaskReadQuerySqlite) populateQueryResult(rows *sql.Rows) (storage.TaskRead, error) {
+func (TaskReadQuerySqlite) populateQueryResult(rows *sql.Rows) (storage.TaskRead, error) {
 	rowsData := taskReadQueryResult{}
 
 	err := rows.Scan(
