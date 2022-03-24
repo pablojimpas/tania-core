@@ -30,7 +30,7 @@ func (*RequestValidation) ValidateFarm(s FarmServer, farmUID uuid.UUID) (storage
 	return farm, nil
 }
 
-func (*RequestValidation) ValidateAreaSize(size string, sizeUnit string) (domain.AreaSize, error) {
+func (*RequestValidation) ValidateAreaSize(size, sizeUnit string) (domain.AreaSize, error) {
 	if size == "" {
 		return domain.AreaSize{}, NewRequestValidationError(Required, "size")
 	}

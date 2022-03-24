@@ -484,7 +484,7 @@ func CreateCropBatch(
 	return initial, nil
 }
 
-func (c *Crop) MoveToArea(cropService CropService, sourceAreaUID uuid.UUID, destinationAreaUID uuid.UUID, quantity int) error {
+func (c *Crop) MoveToArea(cropService CropService, sourceAreaUID, destinationAreaUID uuid.UUID, quantity int) error {
 	// Validate //
 	// Check if source area is exist in DB
 	serviceResult := cropService.FindAreaByID(sourceAreaUID)
