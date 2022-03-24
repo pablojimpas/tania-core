@@ -17,3 +17,11 @@ enabled = true
 
   [analyzers.meta]
   plugins = ["react"]
+
+[[transformers]]
+name = "gofmt"
+enabled = true
+
+[[transformers]]
+name = "gofumpt"
+enabled = true
