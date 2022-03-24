@@ -19,9 +19,9 @@ enabled = true
   plugins = ["react"]
 
 [[transformers]]
-name = "gofmt"
+name = "gofumpt"
 enabled = true
 
 [[transformers]]
-name = "gofumpt"
+name = "gofmt"
 enabled = true
